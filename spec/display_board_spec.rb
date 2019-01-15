@@ -147,7 +147,6 @@ describe "#display_board in 'lib/display_board.rb" do
       # *** Edit the line below ***
       board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
 
-      
       # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
@@ -164,13 +163,11 @@ describe "#display_board in 'lib/display_board.rb" do
       # Then edit the following lines to represent a board entirely filled with X.
       # Remember, every space and every character is important.
 
-      # *** Edit the lines below ***
-      # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
-      # expect(rows[1]).to eq("-----------")
-      # expect(rows[2]).to eq("   |   |   ")
-      # expect(rows[3]).to eq("-----------")
-      # expect(rows[4]).to eq("   |   |   ")
+      expect(rows[0]).to eq(" X | X | X ")
+      expect(rows[1]).to eq("-----------")
+      expect(rows[2]).to eq("   |   |   ")
+      expect(rows[3]).to eq("-----------")
+      expect(rows[4]).to eq("   |   |   ")
 
       # *** Comment the line below by adding a # at the line start ***
       expect(true).to be(true)
